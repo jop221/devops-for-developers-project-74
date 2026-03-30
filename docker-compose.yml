@@ -3,7 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.production
-    image: jop221/devops-for-developers-project-74
     command: make test
     depends_on:
       db:
