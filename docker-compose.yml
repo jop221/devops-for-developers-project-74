@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.production
-    command: make 
+    command: make test
     depends_on:
       db:
         condition: service_healthy
